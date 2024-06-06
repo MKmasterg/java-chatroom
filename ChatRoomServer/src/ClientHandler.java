@@ -44,6 +44,11 @@ public class ClientHandler implements Runnable{
                 server.broadCastMessage(message, this);
             } catch (Exception e){
                 System.out.println("Something went wrong in getting message from user " + this.userInterface);
+                if(socket.isClosed()) {
+                    System.out.println("Connection is closed, removing user " + this.userInterface);
+                    server.removeClient(this);
+                    break;
+                }
             }
         }
     }
