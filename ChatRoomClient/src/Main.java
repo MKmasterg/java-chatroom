@@ -5,6 +5,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please provide a name : ");
         String userInterface = scanner.nextLine();
-        new Client("localhost",4444,userInterface);
+        try {
+            Client client =  new Client("localhost",4444,userInterface);
+            client.run();
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
