@@ -31,7 +31,7 @@ public class Client {
             scanner = new Scanner(System.in);
         } catch (Exception e){
             System.out.println("Something went wrong in connecting to the server " + hostName);
-            throw new Exception("Client couldn't get created.");
+            throw new Exception("Client couldn't get established.");
         }
 
         // Add shutdown hook
