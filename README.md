@@ -34,7 +34,7 @@ The ChatRoom project is a simple client-server application for real-time text-ba
 ### Setting Up the Client
 1. Navigate to the `ChatRoomClient` directory.
 2.   Compile the server code.
-3. Run the server.
+3. Run the client.
 
 ## Usage
  1. Start the server first to listen for client connections.
